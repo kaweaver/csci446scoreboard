@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Number</title>
+  <link href="screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<h1>Guess-the-Number</h1>
+<form id="guessTheNumber">
+<p class="subtitle">Fool! You have followed a link here and now your life depends on guessing my magic number!</p>
+<p>Between 1 and 100! Because it is magic!</p>
+<p id="guessHigher">I am feeling generous: You should guess higher!</p>
+<p id="guessLower">I am feeling generous: You should guess lower!</p>
+<h2 id="score"><span id="guessesLeft"></span> Guesses Left</h2>
+  <input type="text" size="3" name="guess" id="guess">
+  <br>
+  <input type="button" id="btnGuess" value="Guess!">
+</form>
+
+<form id="defeatForm">
+<p class="subtitle">How is this possible?!??! You have defeated me!</p>
+<p>Please enter your name so you may be added to the high scores list:</p>
+  <input type="text" size="8" name="nameToEnter" id="nameToEnter">
+  <br>
+  <input type="button" id="nameButton" value="Add Me!">
+</form>
+
+<form id="playAgainForm">
+  <p id="victoryText">Victory is mine!!</p>
+  <input type="button" id="playAgainButton" value="Play Again">
+</form>
+
+<h2><span class="highScore">High</span> Scores</h2>
+<div id="highScores"></div>
+
+</body>  
+</html>
